@@ -1,0 +1,20 @@
+customer_name = input(" Enter the customer name : ")
+product_price = int(input(" Enter the product price : "))
+Quantity = int(input(" Enter the product quantity : "))
+total_price = Quantity*product_price 
+print("Total price =",total_price )
+if total_price>=5000:
+    discount = total_price*20/100
+elif total_price>=2000:
+    discount = total_price*10/100
+else:
+    discount=0
+print("Discount =", discount)
+final_amount = total_price - discount
+print("Final Amount=",final_amount  )
+print("Customer Name =", customer_name)
+print("Product Price =", product_price)
+print("Quantity =", Quantity)
+print("Total Price =", total_price)
+print("Discount =", discount)
+print("Final Amount =", final_amount)
